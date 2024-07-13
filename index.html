@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Combiner</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="landingPage">
+        <h1>Code Combiner</h1>
+        <p>Welcome to Code Combiner! This tool allows you to combine your HTML, CSS, and JavaScript code into a single HTML file. Click the button below to get started.</p>
+        <button id="startButton">Combine Code</button>
+    </div>
+
+    <div class="container" id="combiningPage" style="display: none;">
+        <div class="editor">
+            <h2>HTML</h2>
+            <textarea id="html" placeholder="Type your HTML here"></textarea>
+        </div>
+        <div class="editor">
+            <h2>CSS</h2>
+            <textarea id="css" placeholder="Type your CSS here"></textarea>
+        </div>
+        <div class="editor">
+            <h2>JavaScript</h2>
+            <textarea id="js" placeholder="Type your JavaScript here"></textarea>
+        </div>
+        <button id="combineButton">Combine</button>
+        <div class="result" id="resultContainer" style="display: none;">
+            <h2>Combined Code</h2>
+            <textarea id="result" readonly></textarea>
+            <div id="buttonsContainer">
+                <button id="copyButton"><span class="material-icons">content_copy</span> Copy</button>
+                <button id="downloadButton"><span class="material-icons">download</span> Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
